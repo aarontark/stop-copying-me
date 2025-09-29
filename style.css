@@ -39,6 +39,11 @@ body {
     flex-grow: 1;
     border-radius: 1rem;
     padding: 1.25rem;
+    overflow: scroll;
+}
+
+.bot-message-container {
+    display: flex;
 }
 
 .user-message-container {
@@ -46,14 +51,21 @@ body {
     justify-content: end;
 }
 
-.user-message {
+.user-message, .bot-message {
     font-size: 1.65rem;
-    background-color: rgb(0, 149, 255);
     color: #fff;
     padding: 1.25rem 1.2rem;
     border-radius: .5rem;
     overflow-wrap: break-word;
     max-width: 90%;
+}
+
+.user-message {
+    background-color: rgb(0, 149, 255);
+}
+
+.bot-message {
+    background-color: #c4c4c4;
 }
 
 .message-input {
