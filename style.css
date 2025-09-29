@@ -29,6 +29,8 @@ body {
     align-items: center;
     padding-block: 2em;
     width: 80%;
+    min-height: 95vh;
+    max-height: 95vh;
 }
 
 .message-window {
@@ -40,8 +42,7 @@ body {
     flex-grow: 1;
     border-radius: 1rem;
     padding: 1.25rem;
-    overflow: scroll;
-    max-height: 80vh;
+    overflow-y: scroll;
 }
 
 .bot-message-container {
